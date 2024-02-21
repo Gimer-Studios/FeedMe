@@ -10,12 +10,15 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bstats.bukkit.Metrics;
 
 public final class FeedMe extends JavaPlugin implements Listener {
 
     private boolean feedingCooldown = false;
     @Override
     public void onEnable() {
+        int pluginId = 21074;
+        Metrics metrics = new Metrics(this, pluginId);
         getLogger().info("Thanks for choosing Gimer Studios. It means a lot to me!");
         getLogger().info("Feed Me Plugin has been enabled.");
         getServer().getPluginManager().registerEvents(this, this);
