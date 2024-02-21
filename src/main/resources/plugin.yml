@@ -1,0 +1,5 @@
+name: FeedMe
+version: '1.0'
+main: com.gimerstudios.FeedMe
+api-version: '1.20'
+website: https://gimerstudios.com
