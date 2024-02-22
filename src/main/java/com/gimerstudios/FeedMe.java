@@ -60,6 +60,12 @@ public final class FeedMe extends JavaPlugin implements Listener {
                     receiver.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 20 * 10, 1));
                     receiver.addPotionEffect(new PotionEffect(PotionEffectType.ABSORPTION, 20 * 60, 2));
                 }
+
+                    else if (itemInHand.getType() == Material.ENCHANTED_GOLDEN_APPLE) {
+                        receiver.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 20 * 10, 1));
+                        receiver.addPotionEffect(new PotionEffect(PotionEffectType.ABSORPTION, 20 * 60, 2));
+                }
+
                 // Remove one item from the feeder's hand
                 itemInHand.setAmount(itemInHand.getAmount() - 1);
                 // Start cooldown
